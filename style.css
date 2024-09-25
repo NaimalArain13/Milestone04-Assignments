@@ -1,0 +1,153 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+    padding-top: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Container for the assignment boxes */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    padding: 15px;               /* Adds space between the boxes */
+    margin-top: 20px;          /* Full height to center vertically */
+}
+
+.about {
+    font-family: Arial, sans-serif; /* Use a clean and readable font */
+    font-size: 1.2rem;              /* Slightly larger font size */
+    color: #333;                    /* Darker text color for readability */
+    line-height: 1.6;               /* Increase line height for better spacing */
+    text-align: justify;            /* Align the text evenly on both sides */
+    max-width: 800px;               /* Limit the width for better readability */
+    margin: 0 auto 30px auto;       /* Center the text block with margin at bottom */
+    padding: 20px;                  /* Add padding for some space inside */
+    background-color: #f9f9f9;      /* Light background to highlight the text */
+    border-radius: 10px;            /* Rounded corners for a soft look */
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+/* Assignment boxes */
+.assignment-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    height: 350px;
+    width: 350px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;           /* Flexbox for internal content */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    text-align: center;      /* Center the text */
+    transition: transform 0.3s ease;
+}
+
+/* Adjusting the paragraph inside assignment-box */
+.assignment-box p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px; /* Adds space between paragraph and the link */
+}
+
+/* Link styling */
+.assignment-box a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assignment-box a:hover {
+    text-decoration: underline;
+}
+@media (min-width: 768px) {
+    .main{
+      flex-direction: row;
+      gap: 20px; 
+      height: 60vh; 
+    }
+  
+   .main div {
+      margin-right: 20px;
+    }
+  }
+  
+
+.assignment-box:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer styling */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+footer section {
+  margin-bottom: 20px;
+}
+
+/* Footer links */
+footer a {
+  display: block;
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer section {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+  }
+
+  footer section {
+    margin-right: 20px;
+  }
+}
